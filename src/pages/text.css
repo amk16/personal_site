@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=M+PLUS+Rounded+1c&family=Monsieur+La+Doulaise&family=Tangerine:wght@400;700&display=swap');
+@import "tailwindcss";
+@layer utilities {
+  .text-xxs {
+    font-size: 0.625rem; /* 10px */
+    line-height: 0.875rem; /* 14px */
+  }
+  
+  .text-xxxs {
+    font-size: 0.5rem; /* 8px */
+    line-height: 0.75rem; /* 12px */
+  }
+
+  .text-4xl {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
+
+  .text-5xl {
+    font-size: 3rem; /* 48px */
+    line-height: 3.25rem; /* 52px */
+  }
+
+  .text-6xl {
+    font-size: 3.75rem; /* 60px */
+    line-height: 4rem; /* 64px */
+  }
+
+  .text-7xl {
+    font-size: 4.5rem; /* 72px */
+    line-height: 4.75rem; /* 76px */
+  }
+
+  .text-8xl {
+    font-size: 6rem; /* 96px */
+    line-height: 6.25rem; /* 100px */
+  }
+
+  .text-9xl {
+    font-size: 8rem; /* 128px */
+    line-height: 8.25rem; /* 132px */
+  }
+}
+
+/* Thin */
+.mplus-thin {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 100;
+}
+
+/* Light */
+.mplus-light {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 300;
+}
+
+/* Regular */
+.mplus-regular {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 400;
+}
+
+/* Medium */
+.mplus-medium {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 500;
+}
+
+/* Bold */
+.mplus-bold {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 700;
+}
+
+/* Extra Bold */
+.mplus-extrabold {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 800;
+}
+
+/* Black */
+.mplus-black {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+}
+
+@theme{
+    --color-golden: #ac8a34ce;
+    --color-cream: #86704D;
+    --shadow-3xl: 5px 0px 35px 35px rgba(0, 0, 0, 0.25); 
+  }
+
+.card {
+    width: 320px;
+    height: 150px;
+    padding: 0.5rem;
+    background: rgba(198, 198, 198, 0.34);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+    transform: skewX(10deg);
+    transition: .4s;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .card:hover {
+    height: 400px;
+    width: 400px;
+    transform: skew(0deg);
+  }
+  
+  .align {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-self: flex-start;
+  }
+  
+  .red {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+  }
+  
+  .yellow {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+  }
+  
+  .green {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+  }
+  
+  .card h1 {
+    text-align: center;
+    margin-bottom: 1.3rem;
+    color: rgb(218, 244, 237);
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+    
+  }
+  
+  .card:hover img {
+    width: 80px; /* 50% larger */
+    height: 80px; /* 50% larger */
+  }
+  
+  
